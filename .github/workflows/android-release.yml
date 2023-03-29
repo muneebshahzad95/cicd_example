@@ -4,19 +4,15 @@ name: Android Release
 on:
   # 2
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-
-  # 3
-  workflow_dispatch:
+    branches:
+      - master
 
 # 4
 jobs:
   # 5
   build:
     # 6
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     # 7
     steps:
